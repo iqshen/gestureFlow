@@ -1,0 +1,13 @@
+*.swp
+package-lock.json
+node_modules/
+dist/
+output/
+**/.DS_Store
+test/coverage/
+test/report/
+.idea
+.scm/
+npm-debug.log
+tmp/
+.vscode/
