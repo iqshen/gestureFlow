@@ -46,6 +46,6 @@ export let drawLine = function ([x1, y1], [x2, y2]) {
     }
     let norm = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     let lineDom = document.createElement('div');
-    lineDom.setAttribute('style', `width: ${norm}px;height:3px;position:fixed;top:${x1}px;left:${y1}px;background-color:blue;transform-origin: top left;transform: rotate(${angle}deg);`);
+    lineDom.setAttribute('style', `width: ${norm}px;height:3px;position:fixed;top:${x1}px;left:${y1}px;background-color:blue;transform-origin: top left;transform: rotate(${angle}deg);box-shadow:0 0 1px blue;border-width: 0 1px;border-color: blue;    border-style: solid;`);
     return lineDom;
 };
